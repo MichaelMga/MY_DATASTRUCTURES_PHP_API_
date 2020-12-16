@@ -1,6 +1,6 @@
 <?php
 
-define("root", "/datastructuresApi/");
+define("root", "/datastructuresAPI/");
 
 
 define("rootUrl", "www.localhost/datastructuresAPI");

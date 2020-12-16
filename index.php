@@ -1,11 +1,10 @@
 <?php
 
 require_once 'constants.php';
-
 require_once 'classes/db.php';
+require_once 'controllers/api.php';
 
-
-$request = $_SERVER["REQUEST_URI"];
+$request = $_SERVER["REQUEST_URI"]; 
 
 
 switch($request){
@@ -15,6 +14,16 @@ switch($request){
         print_r('welcome');
 
         break;
+        
+}
 
+
+
+if(isset($_GET['apiObject'])){
+
+    echo 'you are connected to the api';
+    getExercice($_GET['section'], $_GET['questionNum']);
 
 }
+
+
