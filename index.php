@@ -22,7 +22,9 @@ switch($request){
 if(isset($_GET['apiObject'])){
 
     echo 'you are connected to the api';
-    getExercice($_GET['section'], $_GET['questionNum']);
+    //getExercice($_GET['section'], $_GET['questionNum']);
+
+    getExercice('linked_lists' , 1);
 
 }
 
